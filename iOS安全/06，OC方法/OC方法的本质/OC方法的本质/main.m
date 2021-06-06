@@ -35,6 +35,20 @@
  */
 int main(int argc, char * argv[]) {
    
-    Person *p = [Person person];
+//    Person *p = [Person person];
+    
+//    void(^block)(void) = ^(){
+//        NSLog(@"block");
+//    };
+//
+//    block();
+    int a = 10;
+    void(^block)(void) = ^(){
+        NSLog(@"block--%d", a);
+    };
+    
+    block();
+    
+    
     return 0;
 }
